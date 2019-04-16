@@ -32,7 +32,8 @@ table {
   border-spacing: 0px; }
 
 td {
-  padding: 20px; }
+  padding: 20px;
+  width: 50%; }
 
 .banner {
   background-color: #1a4a8a;
