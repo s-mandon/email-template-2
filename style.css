@@ -31,6 +31,9 @@ table {
   text-align: center;
   border-spacing: 0px; }
 
+td {
+  padding: 20px; }
+
 .banner {
   background-color: #1a4a8a;
   height: 200px;
