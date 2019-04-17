@@ -11,62 +11,169 @@ body {
 }
 
 .email-container {
-    max-width: 600px;
+    max-width: 900px;
     color: $blackcolor;
     background-color: #fff;
     height: auto;
     margin: 0 auto;
     overflow: hidden;
-    font-family: helvetica;
-    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
     line-height: 1.5;
+    text-align: center;
 }
 
 .header {
     background-color: #fff;
-    padding: 10px 20px;
 }
 
 .logo {
     text-align: left;
+    padding: 30px 10px;
 }
 
 .location {
     text-align: right;
+    padding-right: 33px;
+    font-weight: 700;
+
 }
+
+.ford {
+    max-width: 100%;
+
+    img {
+        position: relative;
+        vertical-align: bottom;
+        top: 40px;
+    }
+}
+
+.ford2 {
+    max-width: 100%;
+
+    img {
+        position: relative;
+        vertical-align: top;
+        bottom: 40px;
+    }
+}
+
 
 table {
     width: 100%;
     text-align: center;
     border-spacing: 0px;
-}
-
-td {
-    padding: 20px;
-    width: 50%;
+    table-layout: fixed;
 }
 
 .banner {
+    background-image: url("https://i.imgur.com/8vAYc1z.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-color: $primarycolor;
-    height: 200px;
+    height: 356px;
     color: #fff;
+
+    h1 {
+        font-weight: 700;
+    }
 }
 
-.banner h1 {
-    padding: 0px 100px;
+
+.divide {
+    background-color: $primarycolor;
 }
+
+.main {
+    height: auto;
+    text-align: left;
+p, h2 {
+    padding: 0px 40px;
+}
+}
+
+.main li {
+    padding-right: 40px;
+}
+
+.ford-car {
+    background-image: url("https://i.imgur.com/bztCayO.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    position: relative;
+}
+
 
 .delivery, .exchange, .finance {
     background-color: $blackcolor;
     color: #fff;
+    text-align: left;
+    vertical-align: top;
+    width: 50%;
+    position: relative;
 }
 
 .payment, .personalised {
     background-color: $primarycolor;
     color: #fff;
+    text-align: left;
+    vertical-align: top;
+    position: relative;
+    width: 50%;
 }
 
+.showroom {
+    background-image: url("https://i.imgur.com/Jb7Tvqi.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 359px;
+    color: #fff;
+}
+
+
 .footer {
+    font-size: 14px;
     background-color: $blackcolor;
     color: #fff;
+    padding: 20px;
+}
+
+.social-icons {
+    padding: 0;
+}
+
+ul.social-icons li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+    
+   body {
+        font-size: 14px;
+   }
+
+
+    h1 {
+        font-size: 30px;
+        padding: 0;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .logo img {
+        padding: 0;
+        margin: 0;
+    }
+
+    .location {
+        padding: 0;
+        margin: 0;
+    }
 }
