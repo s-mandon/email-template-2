@@ -24,7 +24,12 @@ $blackcolor: #1b1c1e;
 
 .logo {
     text-align: left;
-    padding: 30px 10px;
+    padding: 20px 0px 0px 30px;
+}
+
+.logo2 {
+    text-align: left;
+    padding: 0px 0px 30px 30px;
 }
 
 .location {
@@ -36,21 +41,22 @@ $blackcolor: #1b1c1e;
 
 .ford {
     max-width: 100%;
+    position: relative;
+    top: 40px;
 
     img {
-        position: relative;
         vertical-align: bottom;
-        top: 40px;
     }
 }
 
 .ford2 {
     max-width: 100%;
+    position: relative;
+    bottom: 40px;
 
     img {
-        position: relative;
         vertical-align: top;
-        bottom: 40px;
+       
     }
 }
 
@@ -176,22 +182,17 @@ ul.social-icons li {
     }
 
     h1 {
-        font-size: 30px;
-        padding: 0;
+        font-size: 25px;
+        padding: 10px;
     }
 
 
     h2 {
-        font-size: 20px;
+        font-size: 16px;
     }
 
-    .logo img {
-        padding: 0;
-        margin: 0;
-    }
 
     .location {
-        padding: 0;
-        margin: 0;
+        text-align: center;
     }
 }
