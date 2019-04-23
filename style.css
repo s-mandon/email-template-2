@@ -14,7 +14,8 @@
   text-align: center; }
 
 .header {
-  background-color: #fff; }
+  background-color: #fff;
+  width: 100%; }
 
 .logo {
   text-align: left;
@@ -100,9 +101,10 @@ table {
 
 .showroom {
   background-image: url("https://i.imgur.com/K4JwMPj.png");
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
   height: 359px;
+  max-width: 900px;
   color: #fff; }
 
 .footer {
@@ -119,25 +121,67 @@ ul.social-icons li {
   display: inline-block;
   padding: 20px; }
 
-@media only screen and (min-width: 601px) and (max-width: 900px) {
-  .main p, li {
-    font-size: 16px;
-    padding: 10px;
-    line-height: 1.1; }
-  h1 {
-    font-size: 30px;
-    padding: 0; }
-  h2 {
-    font-size: 20px; } }
+.mobile-header {
+  display: none; }
 
-@media only screen and (min-width: 200px) and (max-width: 600px) {
-  .main p, li {
-    font-size: 14px;
-    padding: 10px; }
+@media only screen and (min-width: 601px) {
+  .mobile-main {
+    display: none; } }
+
+@media only screen and (max-width: 600px) {
+  .email-container {
+    max-width: 600px; }
+  .main {
+    display: none; }
+  .mobile-main {
+    max-width: 100%; }
+    .mobile-main p, .mobile-main li {
+      font-size: 16px;
+      padding: 15px 39px 0px 36px; }
+  .delivery {
+    height: 439px; }
+  .exchange {
+    height: 523px; }
+  .personalised {
+    height: 200px; }
+  .finance {
+    height: 433px; }
   h1 {
     font-size: 25px;
-    padding: 10px; }
+    padding: 0px; }
   h2 {
-    font-size: 16px; }
-  .location {
-    text-align: center; } }
+    font-size: 22px;
+    padding: 20px 0px 0px 36px; }
+  .showroom {
+    background-image: url("https://i.imgur.com/idP3fCG.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 359px;
+    max-width: 600px;
+    color: #fff; }
+  .ford-car {
+    background-image: url("https://i.imgur.com/tUMQhQS.png");
+    background-size: 100%;
+    max-width: 600px;
+    background-repeat: no-repeat;
+    height: 264px;
+    background-color: #1a4a8a; }
+  .header {
+    display: none; }
+  .mobile-header {
+    display: block; }
+  .logo, .ford {
+    display: none; }
+  .mobile-ford {
+    max-width: 100%;
+    position: relative;
+    top: 40px; }
+    .mobile-ford img {
+      vertical-align: bottom; }
+  .mobile-location {
+    text-align: right;
+    padding-right: 33px;
+    font-weight: 700; }
+  .mobile-logo {
+    text-align: left;
+    padding: 20px 50px 0px 30px; } }
