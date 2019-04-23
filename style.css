@@ -136,16 +136,6 @@ ul.social-icons li {
     .mobile-main p, .mobile-main li {
       font-size: 16px;
       padding: 15px 39px 0px 36px; }
-  .delivery {
-    height: 439px; }
-  .payment {
-    height: 415px; }
-  .exchange {
-    height: 630px; }
-  .personalised {
-    height: 210px; }
-  .finance {
-    height: 470px; }
   h1 {
     font-size: 25px; }
   h2 {
@@ -212,7 +202,7 @@ ul.social-icons li {
     background-image: url("https://i.imgur.com/tUMQhQS.png");
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 200px;
+    height: 180px;
     background-color: #1a4a8a;
     overflow: hidden; }
   .header {
