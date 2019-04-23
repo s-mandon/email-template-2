@@ -222,9 +222,10 @@ ul.social-icons li {
     height: 260px; }
   .ford-car {
     background-image: url("https://i.imgur.com/tUMQhQS.png");
-    height: 250px;
-    background-color: #1a4a8a;
-    overflow: hidden; }
+    height: 190px;
+    background-size: 100%; }
+  .finance, .delivery, .payment, .exchange {
+    height: auto; }
   .header {
     display: none; }
   .mobile-header {
@@ -236,10 +237,10 @@ ul.social-icons li {
     max-width: 100%;
     position: relative;
     top: 40px;
-    text-align: center;
-    padding: 0; }
+    text-align: center; }
     .mobile-ford img {
-      vertical-align: bottom; }
+      vertical-align: bottom;
+      width: 100%; }
   .mobile-ford2 {
     max-width: 100%;
     position: relative;
@@ -250,8 +251,7 @@ ul.social-icons li {
   .mobile-location {
     font-size: 16px;
     text-align: right;
-    font-weight: 700;
-    padding: 0px 0px 0px 40px; }
+    font-weight: 700; }
   .mobile-logo {
     text-align: left;
-    padding: 10px 30px; } }
+    padding: 10px; } }
