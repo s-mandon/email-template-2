@@ -94,11 +94,8 @@ table {
   text-align: left;
   vertical-align: top; }
 
-.payment-img {
-  text-align: center;
+.payment img {
   width: 100%; }
-  .payment-img img {
-    width: 90%; }
 
 .showroom {
   background-image: url("https://i.imgur.com/K4JwMPj.png");
@@ -129,7 +126,7 @@ ul.social-icons li {
   .mobile-main {
     display: none; } }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 481px) and (max-width: 600px) {
   .email-container {
     max-width: 600px; }
   .main {
@@ -149,6 +146,56 @@ ul.social-icons li {
     height: 210px; }
   .finance {
     height: 470px; }
+  h1 {
+    font-size: 25px; }
+  h2 {
+    font-size: 22px;
+    padding: 20px 0px 0px 36px; }
+  .showroom {
+    background-image: url("https://i.imgur.com/idP3fCG.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 359px;
+    max-width: 600px;
+    color: #fff; }
+  .ford-car {
+    background-image: url("https://i.imgur.com/tUMQhQS.png");
+    background-size: 100%;
+    max-width: 600px;
+    background-repeat: no-repeat;
+    height: 200px;
+    background-color: #1a4a8a;
+    overflow: hidden; }
+  .header {
+    display: none; }
+  .mobile-header {
+    display: block;
+    max-width: 600px; }
+  .logo, .ford {
+    display: none; }
+  .mobile-ford {
+    position: relative;
+    top: 40px; }
+    .mobile-ford img {
+      vertical-align: bottom; }
+  .mobile-location {
+    text-align: right;
+    padding-right: 33px;
+    font-weight: 700; }
+  .mobile-logo {
+    text-align: left;
+    padding: 10px 0px 0px 20px; } }
+
+@media screen and (max-width: 480px) {
+  .email-container {
+    max-width: 480px; }
+  .main {
+    display: none; }
+  .mobile-main {
+    max-width: 100%; }
+    .mobile-main p, .mobile-main li {
+      font-size: 16px;
+      padding: 15px 39px 0px 36px; }
   h1 {
     font-size: 25px; }
   h2 {
