@@ -10,6 +10,7 @@
   margin: 0 auto;
   overflow: hidden;
   font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
   line-height: 1.5;
   text-align: center; }
 
@@ -66,11 +67,6 @@ table {
 
 .main {
   text-align: left; }
-  .main p, .main h2 {
-    padding: 0px 40px; }
-
-.main li {
-  padding: 0px 40px 10px 0px; }
 
 .ford-car {
   background-image: url("https://i.imgur.com/Jt1Q3DW.png");
@@ -96,6 +92,15 @@ table {
 
 .payment img {
   width: 100%; }
+
+td {
+  padding-bottom: 10px; }
+
+p, li {
+  padding: 10px 30px 0px 30px; }
+
+h2 {
+  padding-left: 30px; }
 
 .showroom {
   background-image: url("https://i.imgur.com/K4JwMPj.png");
@@ -126,97 +131,105 @@ ul.social-icons li {
   .mobile-main {
     display: none; } }
 
+/*
 @media only screen and (max-width: 600px) {
-  .email-container {
-    max-width: 600px; }
-  .main {
-    display: none; }
-  .mobile-main {
-    max-width: 100%; }
-    .mobile-main p, .mobile-main li {
-      font-size: 16px;
-      padding: 15px 39px 0px 36px; }
-  h1 {
-    font-size: 25px; }
-  h2 {
-    font-size: 22px;
-    padding: 20px 0px 0px 36px; }
-  .showroom {
-    background-image: url("https://i.imgur.com/idP3fCG.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 359px;
-    max-width: 600px;
-    color: #fff; }
-  .ford-car {
-    background-image: url("https://i.imgur.com/tUMQhQS.png");
-    background-size: 100%;
-    max-width: 600px;
-    background-repeat: no-repeat;
-    height: 230px;
-    background-color: #1a4a8a;
-    overflow: hidden; }
-  .header {
-    display: none; }
-  .mobile-header {
-    display: block;
-    max-width: 600px; }
-  .logo, .ford {
-    display: none; }
-  .mobile-ford {
-    position: relative;
-    top: 40px; }
-    .mobile-ford img {
-      vertical-align: bottom; }
-  .mobile-ford2 {
-    max-width: 100%;
-    position: relative;
-    bottom: 40px; }
-    .mobile-ford2 img {
-      vertical-align: top; }
-  .mobile-location {
-    text-align: right;
-    padding-right: 33px;
-    font-weight: 700;
-    font-size: 16px; }
-  .mobile-logo {
-    text-align: left;
-    padding: 10px 60px 0px 10px; } }
 
-@media screen and (max-width: 500px) {
+    .email-container {
+        max-width: 600px;
+    }
+
+    .main {
+        display: none;
+    }
+ 
+    h1 {
+        font-size: 25px;
+    }
+
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .showroom {
+        background-image: url("https://i.imgur.com/idP3fCG.png");
+        height: 359px;
+        color: #fff;
+    }
+
+    .ford-car {
+        background-image: url("https://i.imgur.com/tUMQhQS.png");
+        height: 255px;
+        background-color: $primarycolor;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .mobile-header {
+        display: block;
+        max-width: 600px;
+    }
+
+    .logo, .ford {
+        display: none;
+    }
+
+    .mobile-ford {
+        position: relative;
+        top: 40px;
+    
+        img {
+            vertical-align: bottom;
+        }
+    }
+
+    .mobile-ford2 {
+        max-width: 100%;
+        position: relative;
+        bottom: 40px;
+    
+        img {
+            vertical-align: top;
+        }
+    }
+    
+    .mobile-location {
+        text-align: right;
+        padding-right: 33px;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    .mobile-logo {
+        text-align: left;
+        padding: 10px 60px 0px 10px;
+    }
+}
+   */
+@media screen and (max-width: 600px) {
   .email-container {
-    max-width: 480px; }
+    max-width: 600px; }
   .main {
     display: none; }
-  .mobile-main {
-    max-width: 100%; }
-    .mobile-main p, .mobile-main li {
-      font-size: 16px;
-      padding: 15px 39px 0px 36px; }
   h1 {
     font-size: 25px; }
   h2 {
-    font-size: 22px;
-    padding: 20px 0px 0px 36px; }
+    font-size: 22px; }
   .showroom {
     background-image: url("https://i.imgur.com/idP3fCG.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 260px;
-    max-width: 600px;
-    color: #fff; }
+    height: 260px; }
   .ford-car {
     background-image: url("https://i.imgur.com/tUMQhQS.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 180px;
+    height: 250px;
     background-color: #1a4a8a;
     overflow: hidden; }
   .header {
     display: none; }
   .mobile-header {
     display: block;
-    max-width: 480px; }
+    max-width: 600px; }
   .logo, .ford {
     display: none; }
   .mobile-ford {
@@ -235,10 +248,10 @@ ul.social-icons li {
     .mobile-ford2 img {
       vertical-align: top; }
   .mobile-location {
-    font-size: 12px;
+    font-size: 16px;
     text-align: right;
     font-weight: 700;
-    padding-right: 10px; }
+    padding: 0px 0px 0px 40px; }
   .mobile-logo {
     text-align: left;
-    padding: 5px; } }
+    padding: 10px 30px; } }
