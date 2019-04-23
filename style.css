@@ -219,7 +219,7 @@ ul.social-icons li {
     font-size: 22px; }
   .showroom {
     background-image: url("https://i.imgur.com/idP3fCG.png");
-    height: 260px; }
+    height: 250px; }
   .ford-car {
     background-image: url("https://i.imgur.com/tUMQhQS.png");
     height: 160px;
@@ -235,13 +235,12 @@ ul.social-icons li {
   .logo, .ford {
     display: none; }
   .mobile-ford {
-    width: 100%;
     position: relative;
     top: 40px;
-    padding: 20px 20px 0px 0px; }
+    width: 100%; }
     .mobile-ford img {
       vertical-align: bottom;
-      width: 100%; }
+      max-width: 100%; }
   .mobile-ford2 {
     width: 100%;
     position: relative;
