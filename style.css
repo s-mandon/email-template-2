@@ -234,19 +234,17 @@ ul.social-icons li {
   .logo, .ford {
     display: none; }
   .mobile-ford {
-    width: 45%;
+    width: 100%;
     position: relative;
     top: 40px;
-    left: 10px;
     padding: 20px 20px 0px 0px; }
     .mobile-ford img {
       vertical-align: bottom;
       width: 100%; }
   .mobile-ford2 {
-    width: 45%;
+    width: 100%;
     position: relative;
-    bottom: 40px;
-    left: 10px; }
+    bottom: 40px; }
     .mobile-ford2 img {
       vertical-align: top;
       width: 100%; }
@@ -256,4 +254,4 @@ ul.social-icons li {
     font-weight: 700; }
   .mobile-logo {
     text-align: left;
-    padding: 10px; } }
+    padding: 10px 20px; } }
