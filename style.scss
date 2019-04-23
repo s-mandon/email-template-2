@@ -230,7 +230,7 @@ ul.social-icons li {
         background-size: 100%;
         max-width: 600px;
         background-repeat: no-repeat;
-        height: 200px;
+        height: 250px;
         background-color: $primarycolor;
         overflow: hidden;
     }
@@ -304,7 +304,7 @@ ul.social-icons li {
         background-image: url("https://i.imgur.com/idP3fCG.png");
         background-size: 100%;
         background-repeat: no-repeat;
-        height: 359px;
+        height: 260px;
         max-width: 600px;
         color: #fff;
     }
@@ -312,7 +312,6 @@ ul.social-icons li {
     .ford-car {
         background-image: url("https://i.imgur.com/tUMQhQS.png");
         background-size: 100%;
-        max-width: 600px;
         background-repeat: no-repeat;
         height: 200px;
         background-color: $primarycolor;
@@ -325,7 +324,7 @@ ul.social-icons li {
 
     .mobile-header {
         display: block;
-        max-width: 600px;
+        max-width: 480px;
     }
 
     .logo, .ford {
@@ -333,8 +332,11 @@ ul.social-icons li {
     }
 
     .mobile-ford {
+        max-width: 100%;
         position: relative;
         top: 40px;
+        text-align: center;
+        right: 20px;
     
         img {
             vertical-align: bottom;
@@ -343,15 +345,15 @@ ul.social-icons li {
 
     .mobile-location {
             text-align: right;
-            padding-right: 33px;
             font-weight: 700;
+            padding-right: 10px;
     }
 
     .mobile-logo {
         text-align: left;
-        padding: 10px 0px 0px 20px;
-    }
+        padding-left: 10px;
 }
+    }
 
     
 
