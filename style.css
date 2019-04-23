@@ -92,12 +92,13 @@ table {
   background-color: #1a4a8a;
   color: #fff;
   text-align: left;
-  vertical-align: top;
-  position: relative;
-  width: 50%; }
+  vertical-align: top; }
 
-.payment img {
+.payment-img {
+  text-align: center;
   width: 100%; }
+  .payment-img img {
+    width: 90%; }
 
 .showroom {
   background-image: url("https://i.imgur.com/K4JwMPj.png");
@@ -140,15 +141,16 @@ ul.social-icons li {
       padding: 15px 39px 0px 36px; }
   .delivery {
     height: 439px; }
+  .payment {
+    height: 415px; }
   .exchange {
-    height: 523px; }
+    height: 630px; }
   .personalised {
-    height: 200px; }
+    height: 210px; }
   .finance {
-    height: 433px; }
+    height: 470px; }
   h1 {
-    font-size: 25px;
-    padding: 0px; }
+    font-size: 25px; }
   h2 {
     font-size: 22px;
     padding: 20px 0px 0px 36px; }
@@ -164,16 +166,17 @@ ul.social-icons li {
     background-size: 100%;
     max-width: 600px;
     background-repeat: no-repeat;
-    height: 264px;
-    background-color: #1a4a8a; }
+    height: 200px;
+    background-color: #1a4a8a;
+    overflow: hidden; }
   .header {
     display: none; }
   .mobile-header {
-    display: block; }
+    display: block;
+    max-width: 600px; }
   .logo, .ford {
     display: none; }
   .mobile-ford {
-    max-width: 100%;
     position: relative;
     top: 40px; }
     .mobile-ford img {
@@ -184,4 +187,4 @@ ul.social-icons li {
     font-weight: 700; }
   .mobile-logo {
     text-align: left;
-    padding: 20px 50px 0px 30px; } }
+    padding: 10px 0px 0px 20px; } }
