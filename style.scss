@@ -132,7 +132,7 @@ p, h2 {
     background-image: url("https://i.imgur.com/K4JwMPj.png");
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 359px;
+    height: 270px;
     max-width: 900px;
     color: #fff;
 }
@@ -231,12 +231,24 @@ ul.social-icons li {
     .mobile-ford {
         position: relative;
         top: 40px;
+        padding-left: 40px;
     
         img {
             vertical-align: bottom;
         }
     }
 
+    .mobile-ford2 {
+        max-width: 100%;
+        position: relative;
+        bottom: 40px;
+        padding-left: 40px;
+    
+        img {
+            vertical-align: top;
+        }
+    }
+    
     .mobile-location {
             text-align: right;
             padding-right: 33px;
@@ -245,7 +257,7 @@ ul.social-icons li {
 
     .mobile-logo {
         text-align: left;
-        padding: 10px 0px 0px 20px;
+        padding: 10px 0px 0px 40px;
     }
 
   
@@ -316,10 +328,19 @@ ul.social-icons li {
         position: relative;
         top: 40px;
         text-align: center;
-        right: 20px;
     
         img {
             vertical-align: bottom;
+        }
+    }
+
+    .mobile-ford2 {
+        max-width: 100%;
+        position: relative;
+        bottom: 40px;
+    
+        img {
+            vertical-align: top;
         }
     }
 
