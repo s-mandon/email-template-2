@@ -275,7 +275,7 @@ ul.social-icons li {
 
     .ford-car {
         background-image: url("https://i.imgur.com/tUMQhQS.png");
-        height: 190px;
+        height: 160px;
         background-size: 100%;
     }
 
@@ -297,10 +297,11 @@ ul.social-icons li {
     }
 
     .mobile-ford {
-        max-width: 100%;
+        width: 45%;
         position: relative;
         top: 40px;
-        left: 50px;
+        left: 10px;
+        padding: 20px 20px 0px 0px;
         
     
         img {
@@ -310,10 +311,10 @@ ul.social-icons li {
     }
 
     .mobile-ford2 {
-        max-width: 100%;
+        width: 45%;
         position: relative;
         bottom: 40px;
-        left: 50px;
+        left: 10px;
     
         img {
             vertical-align: top;
@@ -330,11 +331,7 @@ ul.social-icons li {
     .mobile-logo {
         text-align: left;
         padding: 10px;
-        img {
-            width: 100%;
-        }
     }
 }
-
     
 
