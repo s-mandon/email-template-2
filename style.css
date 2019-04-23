@@ -126,7 +126,7 @@ ul.social-icons li {
   .mobile-main {
     display: none; } }
 
-@media only screen and (min-width: 481px) and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .email-container {
     max-width: 600px; }
   .main {
@@ -153,7 +153,7 @@ ul.social-icons li {
     background-size: 100%;
     max-width: 600px;
     background-repeat: no-repeat;
-    height: 250px;
+    height: 230px;
     background-color: #1a4a8a;
     overflow: hidden; }
   .header {
@@ -182,7 +182,7 @@ ul.social-icons li {
     font-weight: 700; }
   .mobile-logo {
     text-align: left;
-    padding: 10px 0px 0px 40px; } }
+    padding: 10px 20px 0px 10px; } }
 
 @media screen and (max-width: 480px) {
   .email-container {
@@ -224,19 +224,22 @@ ul.social-icons li {
     max-width: 100%;
     position: relative;
     top: 40px;
-    text-align: center; }
+    text-align: center;
+    padding: 10px; }
     .mobile-ford img {
       vertical-align: bottom; }
   .mobile-ford2 {
     max-width: 100%;
     position: relative;
-    bottom: 40px; }
+    bottom: 40px;
+    padding: 10px; }
     .mobile-ford2 img {
       vertical-align: top; }
   .mobile-location {
+    font-size: 15px;
     text-align: right;
     font-weight: 700;
     padding-right: 10px; }
   .mobile-logo {
     text-align: left;
-    padding-left: 10px; } }
+    padding: 10px; } }
