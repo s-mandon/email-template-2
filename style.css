@@ -237,12 +237,12 @@ ul.social-icons li {
   .mobile-ford {
     position: relative;
     top: 40px;
-    width: 100%; }
+    width: 600px; }
     .mobile-ford img {
       vertical-align: bottom;
       max-width: 100%; }
   .mobile-ford2 {
-    width: 100%;
+    width: 600px;
     position: relative;
     bottom: 40px; }
     .mobile-ford2 img {
