@@ -271,6 +271,7 @@ ul.social-icons li {
     .showroom {
         background-image: url("https://i.imgur.com/idP3fCG.png");
         height: 250px;
+        font-size: 14px;
     }
 
     .ford-car {
@@ -298,6 +299,18 @@ ul.social-icons li {
             top: 15px;
             width: 100%;
             min-width: 50%;
+        }
+    }
+
+    .mobile-header2 {
+        display: block;
+        max-width: 600px;
+        height: 100px;
+
+        img {
+            position: relative;
+            bottom: 15px;
+            width: 100%;
         }
     }
 
