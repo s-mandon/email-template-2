@@ -291,32 +291,18 @@ ul.social-icons li {
     .mobile-header {
         display: block;
         max-width: 600px;
+        height: 100px;
+
+        img {
+            position: relative;
+            top: 15px;
+            width: 100%;
+            min-width: 50%;
+        }
     }
 
     .logo, .ford {
         display: none;
-    }
-
-    .mobile-ford {
-        position: relative;
-        top: 40px;
-        width: 600px;
-    
-        img {
-            vertical-align: bottom;
-            max-width: 100%;
-        }
-    }
-
-    .mobile-ford2 {
-        width: 600px;
-        position: relative;
-        bottom: 40px;
-    
-        img {
-            vertical-align: top;
-            width: 100%;
-        }
     }
 
     .mobile-location {

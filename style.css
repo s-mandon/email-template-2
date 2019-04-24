@@ -231,23 +231,15 @@ ul.social-icons li {
     display: none; }
   .mobile-header {
     display: block;
-    max-width: 600px; }
+    max-width: 600px;
+    height: 100px; }
+    .mobile-header img {
+      position: relative;
+      top: 15px;
+      width: 100%;
+      min-width: 50%; }
   .logo, .ford {
     display: none; }
-  .mobile-ford {
-    position: relative;
-    top: 40px;
-    width: 600px; }
-    .mobile-ford img {
-      vertical-align: bottom;
-      max-width: 100%; }
-  .mobile-ford2 {
-    width: 600px;
-    position: relative;
-    bottom: 40px; }
-    .mobile-ford2 img {
-      vertical-align: top;
-      width: 100%; }
   .mobile-location {
     font-size: 16px;
     text-align: right;
