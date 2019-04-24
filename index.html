@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="x-apple-disable-message-reformatting">  
-    <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <title></title> 
 
@@ -83,56 +82,129 @@
         img.g-img + div {
             display: none !important;
         }
-    </style>
-    </head>
+
+         /*For mobile layout*/
+        @media only screen and (min-width: 601px) {
+        .mobile-main {
+            display: none; } }
+        
+        @media screen and (max-width: 600px) {
+        .email-container {
+            max-width: 600px; }
+        .main {
+            display: none; }
+        h1 {
+            font-size: 25px; }
+        h2 {
+            font-size: 22px; }
+        .showroom {
+            background-image: url("https://i.imgur.com/idP3fCG.png");
+            height: 250px;
+            font-size: 14px; }
+        .ford-car {
+            background-image: url("https://i.imgur.com/tUMQhQS.png");
+            height: 350px;
+            background-size: 100%;
+            background-color: #1a4a8a; }
+        .finance, .delivery, .payment, .exchange {
+            height: auto; }
+        .header {
+            display: none; }
+        .mobile-header {
+            display: block !important;
+            max-width: 600px;
+            height: 100px; }
+            .mobile-header img {
+            position: relative;
+            top: 15px;
+            width: 100%;
+            min-width: 50%; }
+        .mobile-header2 {
+            display: block !important;
+            max-width: 600px;
+            height: 100px; }
+            .mobile-header2 img {
+            position: relative;
+            bottom: 15px;
+            width: 100%; }
+        .logo, .ford {
+            display: none; }
+        .mobile-location {
+            font-size: 16px;
+            text-align: right;
+            font-weight: 700; }
+        .mobile-logo {
+            text-align: left;
+            padding: 10px 20px; }
+        .showroom {
+            height: 200px !important;
+        } 
+        .showroom h2 {
+        font-size: 16px;
+        }
+        .showroom h1 {
+        font-size: 18px;
+    }
+}
+</style>
+</head>
     <body>
-        <!--Content starts here-->
-    
-        <div class="email-background">
-            <div class="email-container">
-                <table class="mobile-header">
+   
+        <!--CONTENT STARTS HERE-->
+
+        <div class="email-background" style="background-color: #0e0e0e;margin: 0 auto;">
+            <div class="email-container" style="max-width: 900px;color: #1b1c1e;background-color: #fff;height: auto;margin: 0 auto;overflow: hidden;font-family: 'Montserrat', sans-serif;font-size: 18px;line-height: 1.5;text-align: center;">
+               
+                <!--MOBILE HEADER START-->
+                <table class="mobile-header" style="width: 100%;text-align: center;border-spacing: 0px;table-layout: fixed;display: none;">
                     <tr>
-                        <td>
+                        <td style="padding-bottom: 10px;">
                             <img src="https://i.imgur.com/GsSjBzC.png">
-                     </td>
-            
-                    </tr>
-                </table>
-                <table class="header">
-                    <tr>
-                        <td class="logo"><a href="https://www.haynesgroup.co.uk/"><img src="https://i.imgur.com/L9yttSS.png" alt="haynes logo"></a></td>
-                        <td><img class="ford" src="https://i.imgur.com/D4gjaaW.png" alt="ford logo"></td>
-                        <td class="location">
-                            <p>Haynes Ford of Maidstone</p>
                         </td>
                     </tr>
                 </table>
-    
-                <table class="banner">
+                <!--MOBILE HEADER END-->
+
+                <!--DESKTOP HEADER START-->
+                <table class="header" style="width: 100%;text-align: center;border-spacing: 0px;table-layout: fixed;background-color: #fff;">
                     <tr>
-                        <td>
-                            <h1>Thank you for ordering your New FORD vehicle</h1>
+                        <td class="logo" style="padding-bottom: 10px;text-align: left;padding: 20px 0px 0px 30px;">
+                            <a href="https://www.haynesgroup.co.uk/"><img src="https://i.imgur.com/L9yttSS.png" alt="haynes logo"></a>
+                        </td>
+                        <td style="padding-bottom: 10px;"><img class="ford" src="https://i.imgur.com/D4gjaaW.png" alt="ford logo" style="max-width: 100%;position: relative;top: 40px;"></td>
+                        <td class="location" style="padding-bottom: 10px;text-align: right;padding-right: 33px;font-weight: 700;">
+                            <p style="padding: 10px 30px 0px 30px;">Haynes Ford of Maidstone</p>
                         </td>
                     </tr>
                 </table>
-    
-                <table class="divide">
+                <!--DESKTOP HEADER END-->
+
+                <!--BANNER START-->
+                <table class="banner" style="width: 100%;text-align: center;border-spacing: 0px;table-layout: fixed;background-image: url(https://i.imgur.com/8vAYc1z.png);background-repeat: no-repeat;background-position: center;background-size: cover;background-color: #1a4a8a;height: 356px;color: #fff;">
                     <tr>
-                        <td>&nbsp;&nbsp;</td>
+                        <td style="padding-bottom: 10px;">
+                            <h1 style="font-weight: 700;">Thank you for ordering your New FORD vehicle</h1>
+                        </td>
                     </tr>
                 </table>
 
-                <!--MOBILE MAIN SECTION-->
-
-                <table class="mobile-main">
+                <table class="divide" style="width: 100%;text-align: center;border-spacing: 0px;table-layout: fixed;background-color: #1a4a8a;">
                     <tr>
-                            <td class="ford-car">
-                            </td>
+                        <td style="padding-bottom: 10px;">&nbsp;&nbsp;</td>
+                    </tr>
+                </table>
+                <!--BANNER END-->
+
+                <!--MOBILE MAIN SECTION START-->
+                <table class="mobile-main" style="width: 100%;text-align: center;border-spacing: 0px;table-layout: fixed;">
+                    <tr>
+                        <td class="ford-car" style="padding-bottom: 10px;background-image: url(https://i.imgur.com/Jt1Q3DW.png);background-size: cover;background-repeat: no-repeat;max-width: 100%;position: relative;">
+                        </td>
                     </tr>
                     <tr>
-                        <td class="delivery">
-                            <h2>Vehicle Delivery</h2>
-                            <p>Delivery information can vary with dates going backwards and forwards, but rest assured we will keep you fully updated along the way as accurately as we are able to.
+                        <td class="delivery" style="padding-bottom: 10px;background-color: #1b1c1e;color: #fff;text-align: left;vertical-align: top;width: 50%;position: relative;height: 500px;">
+                            <h2 style="padding-left: 30px;">Vehicle Delivery</h2>
+                            <p style="padding: 10px 30px 0px 30px;">Delivery information can vary with dates going backwards and forwards, but rest assured we will keep you fully updated along the way as accurately as we are able to.
                                 <br>
                                 <br><strong>Haynes Stock:</strong> Delivery dates agreed when you order your car.
                                 <br>
@@ -144,106 +216,39 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="payment">
-                            <h2>Method of Payment</h2>
-                            <p><strong>BACS/CHAPS:</strong> 2 working days prior to collection (please ask your sales executive for bank details)
+                        <td class="payment" style="padding-bottom: 10px;background-color: #1a4a8a;color: #fff;text-align: left;vertical-align: top;">
+                            <h2 style="padding-left: 30px;">Method of Payment</h2>
+                            <p style="padding: 10px 30px 0px 30px;"><strong>BACS/CHAPS:</strong> 2 working days prior to collection (please ask your sales executive for bank details)
                                 <br>
                                 <br><strong>Debit Cards:</strong> Acceptable on the day
                                 <br>
                                 <br><strong>Cash:</strong> Only accepted between 9:00am to 4:00pm Monday - Friday (up to a total of £9,200 per vehicle)</p>
                         </td>
                     </tr>
-                        <tr>
-                            <td class="exchange">
-                                <h2>Part Exchange?</h2>
-                                <p>Please remember to bring with you the following:</p>
-                                <ul>
-                                    <li>Current registration document (V5c) (IMPORTANT) - By law we cannot accept a part exchange without a current V5c.</li>
-                                    <li> MOT certificate (if applicable)</li>
-                                    <li>Service history</li>
-                                    <li>All keys</li>
-                                    <li>Locking wheel nut key </li>
-                                    <li>Your sales executive will complete an online notification to DVLA to advise of the transfer of the part exchange vehicle to us. Please do not contact DVLA yourself prior to bringing in your car to us.</li>
-                                </ul>
-                            </td>
-                        </tr>
                     <tr>
-                        <td class="personalised">
-                            <h2>Personalised Number Plate?</h2>
-                            <p>If you have a personalised plate on your car, please discuss the transfer process with your sales executive.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="finance">
-                            <h2>Signing Finance Documents</h2>
-                            <p>Prior to collection of your new vehicle, we will make an appointment at your convenience to complete your finance paperwork.
-                                <br>
-                                <br>Please bring the following with you:
-                                <br>
-                                <br>Driving Licence in your current address.
-                                <br>
-                                <br>Bank/Credit Card with clear matching signature on back.
-                                <br>
-                                <br>Bank Statement/Utility bill dated within the last three months (if requested)</p>
-                        </td>
-                    </tr>
-                </table>
-
-                <!--MOBILE MAIN SECTION END-->
-    
-                <table class="main">
-                    <tr>
-                        <td class="delivery">
-                            <h2>Vehicle Delivery</h2>
-                            <p>Delivery information can vary with dates going backwards and forwards, but rest assured we will keep you fully updated along the way as accurately as we are able to.
-                                <br>
-                                <br><strong>Haynes Stock:</strong> Delivery dates agreed when you order your car.
-                                <br>
-                                <br><strong>Ford Stock:</strong> Approximately 4-6 weeks. We will update you when your car arrives in the UK, and then once it arrives in our PDI Centre.
-                                <br>
-                                <br><strong>Factory Order:</strong> Varies depending on model typically
-                                <strong>8-20 weeks</strong>. Please speak to your sales executive for more details.
-                            </p>
-                        </td>
-    
-                        <td class="ford-car"></td>
-                    </tr>
-    
-                    <tr>
-                        <td>&nbsp;&nbsp;</td>
-                    </tr>
-    
-                    <tr>
-                        <td class="exchange">
-                            <h2>Part Exchange?</h2>
-                            <p>Please remember to bring with you the following:</p>
+                        <td class="exchange" style="padding-bottom: 10px;background-color: #1b1c1e;color: #fff;text-align: left;vertical-align: top;width: 50%;position: relative;height: 500px;">
+                            <h2 style="padding-left: 30px;">Part Exchange?</h2>
+                            <p style="padding: 10px 30px 0px 30px;">Please remember to bring with you the following:</p>
                             <ul>
-                                <li>Current registration document (V5c) (IMPORTANT) - By law we cannot accept a part exchange without a current V5c.</li>
-                                <li> MOT certificate (if applicable)</li>
-                                <li>Service history</li>
-                                <li>All keys</li>
-                                <li>Locking wheel nut key </li>
-                                <li>Your sales executive will complete an online notification to DVLA to advise of the transfer of the part exchange vehicle to us. Please do not contact DVLA yourself prior to bringing in your car to us.</li>
+                                <li style="padding: 10px 30px 0px 30px;">Current registration document (V5c) (IMPORTANT) - By law we cannot accept a part exchange without a current V5c.</li>
+                                <li style="padding: 10px 30px 0px 30px;"> MOT certificate (if applicable)</li>
+                                <li style="padding: 10px 30px 0px 30px;">Service history</li>
+                                <li style="padding: 10px 30px 0px 30px;">All keys</li>
+                                <li style="padding: 10px 30px 0px 30px;">Locking wheel nut key </li>
+                                <li style="padding: 10px 30px 0px 30px;">Your sales executive will complete an online notification to DVLA to advise of the transfer of the part exchange vehicle to us. Please do not contact DVLA yourself prior to bringing in your car to us.</li>
                             </ul>
                         </td>
-                        <td class="payment">
-                            <img src="https://i.imgur.com/w2pY9wA.png">
-                            <h2>Method of Payment</h2>
-                            <p><strong>BACS/CHAPS:</strong> 2 working days prior to collection (please ask your sales executive for bank details)
-                                <br>
-                                <br><strong>Debit Cards:</strong> Acceptable on the day
-                                <br>
-                                <br><strong>Cash:</strong> Only accepted between 9:00am to 4:00pm Monday - Friday (up to a total of £9,200 per vehicle)</p>
+                    </tr>
+                    <tr>
+                        <td class="personalised" style="padding-bottom: 10px;background-color: #1a4a8a;color: #fff;text-align: left;vertical-align: top;">
+                            <h2 style="padding-left: 30px;">Personalised Number Plate?</h2>
+                            <p style="padding: 10px 30px 0px 30px;">If you have a personalised plate on your car, please discuss the transfer process with your sales executive.</p>
                         </td>
                     </tr>
                     <tr>
-                        <td class="personalised">
-                            <h2>Personalised Number Plate?</h2>
-                            <p>If you have a personalised plate on your car, please discuss the transfer process with your sales executive.</p>
-                        </td>
-                        <td class="finance">
-                            <h2>Signing Finance Documents</h2>
-                            <p>Prior to collection of your new vehicle, we will make an appointment at your convenience to complete your finance paperwork.
+                        <td class="finance" style="padding-bottom: 10px;background-color: #1b1c1e;color: #fff;text-align: left;vertical-align: top;width: 50%;position: relative;height: 500px;">
+                            <h2 style="padding-left: 30px;">Signing Finance Documents</h2>
+                            <p style="padding: 10px 30px 0px 30px;">Prior to collection of your new vehicle, we will make an appointment at your convenience to complete your finance paperwork.
                                 <br>
                                 <br>Please bring the following with you:
                                 <br>
@@ -254,83 +259,156 @@
                                 <br>Bank Statement/Utility bill dated within the last three months (if requested)</p>
                         </td>
                     </tr>
-    
                 </table>
-                <table class="thank">
+                <!--MOBILE MAIN SECTION END-->
+
+                <!--DESKTOP MAIN SECTION START-->
+                <table class="main" style="width: 100%;text-align: left;border-spacing: 0px;table-layout: fixed;">
                     <tr>
-                        <td>
+                        <td class="delivery" style="padding-bottom: 10px;background-color: #1b1c1e;color: #fff;text-align: left;vertical-align: top;width: 50%;position: relative;height: 500px;">
+                            <h2 style="padding-left: 30px;">Vehicle Delivery</h2>
+                            <p style="padding: 10px 30px 0px 30px;">Delivery information can vary with dates going backwards and forwards, but rest assured we will keep you fully updated along the way as accurately as we are able to.
+                                <br>
+                                <br><strong>Haynes Stock:</strong> Delivery dates agreed when you order your car.
+                                <br>
+                                <br><strong>Ford Stock:</strong> Approximately 4-6 weeks. We will update you when your car arrives in the UK, and then once it arrives in our PDI Centre.
+                                <br>
+                                <br><strong>Factory Order:</strong> Varies depending on model typically
+                                <strong>8-20 weeks</strong>. Please speak to your sales executive for more details.
+                            </p>
+                        </td>
+
+                        <td class="ford-car" style="padding-bottom: 10px;background-image: url(https://i.imgur.com/Jt1Q3DW.png);background-size: cover;background-repeat: no-repeat;max-width: 100%;position: relative;"></td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding-bottom: 10px;">&nbsp;&nbsp;</td>
+                    </tr>
+
+                    <tr>
+                        <td class="exchange" style="padding-bottom: 10px;background-color: #1b1c1e;color: #fff;text-align: left;vertical-align: top;width: 50%;position: relative;height: 500px;">
+                            <h2 style="padding-left: 30px;">Part Exchange?</h2>
+                            <p style="padding: 10px 30px 0px 30px;">Please remember to bring with you the following:</p>
+                            <ul>
+                                <li style="padding: 10px 30px 0px 30px;">Current registration document (V5c) (IMPORTANT) - By law we cannot accept a part exchange without a current V5c.</li>
+                                <li style="padding: 10px 30px 0px 30px;"> MOT certificate (if applicable)</li>
+                                <li style="padding: 10px 30px 0px 30px;">Service history</li>
+                                <li style="padding: 10px 30px 0px 30px;">All keys</li>
+                                <li style="padding: 10px 30px 0px 30px;">Locking wheel nut key </li>
+                                <li style="padding: 10px 30px 0px 30px;">Your sales executive will complete an online notification to DVLA to advise of the transfer of the part exchange vehicle to us. Please do not contact DVLA yourself prior to bringing in your car to us.</li>
+                            </ul>
+                        </td>
+                        <td class="payment" style="padding-bottom: 10px;background-color: #1a4a8a;color: #fff;text-align: left;vertical-align: top;">
+                            <img src="https://i.imgur.com/w2pY9wA.png" style="width: 100%;">
+                            <h2 style="padding-left: 30px;">Method of Payment</h2>
+                            <p style="padding: 10px 30px 0px 30px;"><strong>BACS/CHAPS:</strong> 2 working days prior to collection (please ask your sales executive for bank details)
+                                <br>
+                                <br><strong>Debit Cards:</strong> Acceptable on the day
+                                <br>
+                                <br><strong>Cash:</strong> Only accepted between 9:00am to 4:00pm Monday - Friday (up to a total of £9,200 per vehicle)</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="personalised" style="padding-bottom: 10px;background-color: #1a4a8a;color: #fff;text-align: left;vertical-align: top;">
+                            <h2 style="padding-left: 30px;">Personalised Number Plate?</h2>
+                            <p style="padding: 10px 30px 0px 30px;">If you have a personalised plate on your car, please discuss the transfer process with your sales executive.</p>
+                        </td>
+                        <td class="finance" style="padding-bottom: 10px;background-color: #1b1c1e;color: #fff;text-align: left;vertical-align: top;width: 50%;position: relative;height: 500px;">
+                            <h2 style="padding-left: 30px;">Signing Finance Documents</h2>
+                            <p style="padding: 10px 30px 0px 30px;">Prior to collection of your new vehicle, we will make an appointment at your convenience to complete your finance paperwork.
+                                <br>
+                                <br>Please bring the following with you:
+                                <br>
+                                <br>Driving Licence in your current address.
+                                <br>
+                                <br>Bank/Credit Card with clear matching signature on back.
+                                <br>
+                                <br>Bank Statement/Utility bill dated within the last three months (if requested)</p>
+                        </td>
+                    </tr>
+                </table>
+                <!--DESKTOP MAIN SECTION END-->
+
+                <!--THANK YOU & SHOWROOM START-->
+                <table class="thank" style="width: 100%;text-align: center;border-spacing: 0px;table-layout: fixed;">
+                    <tr>
+                        <td style="padding-bottom: 10px;">
                             <h3>Thank you</h3>
-                            <p>Once again thank you for ordering your new car from Haynes Ford
+                            <p style="padding: 10px 30px 0px 30px;">Once again thank you for ordering your new car from Haynes Ford
                                 <br>
                                 <br>Kind regards,
                                 <br>
                                 <br><strong>Shane Moores<br>
-                        New Car Sales Manager</strong></p>
+                                New Car Sales Manager</strong></p>
                         </td>
                     </tr>
-                    <td class="showroom">
+                    <td class="showroom" style="padding-bottom: 10px;background-image: url(https://i.imgur.com/K4JwMPj.png);background-size: 100%;background-repeat: no-repeat;height: 300px;max-width: 900px;color: #fff;">
                         <h1>Haynes Ford of Maidstone</h1>
-                        <h2>23 Ashford Road ME14 5DQ</h2>
-                        <p>www.haynesford.co.uk</p>
+                        <h2 style="padding-left: 30px;">23 Ashford Road ME14 5DQ</h2>
+                        <p style="padding: 10px 30px 0px 30px;">www.haynesford.co.uk</p>
                     </td>
                 </table>
+                <!--THANK YOU & SHOWROOM END-->
 
-                <table class="mobile-header2">
-                        <tr>
-                            <td>
-                               <img src="https://i.imgur.com/yfXZTyQ.png">
-                            </td>
-                        </tr>
-                    </table>
-    
-                <table class="header">
+                <!--MOBILE HEADER 2 START-->
+                <table class="mobile-header2" style="width: 100%;text-align: center;border-spacing: 0px;table-layout: fixed; display: none;">
                     <tr>
-                        <td class="logo">
+                        <td style="padding-bottom: 10px;">
+                            <img src="https://i.imgur.com/yfXZTyQ.png">
+                        </td>
+                    </tr>
+                </table>
+                <!--MOBILE HEADER 2 END-->
+
+                <!--DESKTOP HEADER 2 START-->
+                <table class="header" style="width: 100%;text-align: center;border-spacing: 0px;table-layout: fixed;background-color: #fff;">
+                    <tr>
+                        <td class="logo" style="padding-bottom: 10px;text-align: left;padding: 20px 0px 0px 30px;">
                             <img src="https://i.imgur.com/L9yttSS.png" alt="haynes-logo">
                         </td>
-                        <td class="ford2">
-                            <img src="https://i.imgur.com/D4gjaaW.png" alt="ford-logo">
+                        <td class="ford2" style="padding-bottom: 10px;max-width: 100%;position: relative;bottom: 40px;">
+                            <img src="https://i.imgur.com/D4gjaaW.png" alt="ford-logo" style="vertical-align: top;">
                         </td>
-                        <td class="location">
-                            <p>Haynes Ford of Maidstone</p>
+                        <td class="location" style="padding-bottom: 10px;text-align: right;padding-right: 33px;font-weight: 700;">
+                            <p style="padding: 10px 30px 0px 30px;">Haynes Ford of Maidstone</p>
                         </td>
                     </tr>
                 </table>
-    
-                <!-- Email Footer : BEGIN -->
-                <table>
+                <!--DESKTOP HEADER 2 END-->
+
+                <!--FOOTER START-->
+                <table style="width: 100%;text-align: center;border-spacing: 0px;table-layout: fixed;">
                     <tr>
-                        <td>
+                        <td style="padding-bottom: 10px;">
                         </td>
                     </tr>
                 </table>
-            </div>
-            <!--email-container end-->
-    
-            <!-- Full Bleed Background Section : BEGIN -->
-            <table class="footer">
+            </div> <!--EMAIL CONTAINER END-->
+
+            <!--FULL BLEED SECTION START-->
+            <table class="footer" style="width: 100%;text-align: center;border-spacing: 0px;table-layout: fixed;font-size: 14px;background-color: #1b1c1e;color: #fff;padding: 20px;">
                 <tr>
-                    <td>
-                        <div class="email-container">
-                            <table class="footer">
+                    <td style="padding-bottom: 10px;">
+                        <div class="email-container" style="max-width: 900px;color: #1b1c1e;background-color: #fff;height: auto;margin: 0 auto;overflow: hidden;font-family: 'Montserrat', sans-serif;font-size: 18px;line-height: 1.5;text-align: center;">
+                            <table class="footer" style="width: 100%;text-align: center;border-spacing: 0px;table-layout: fixed;font-size: 14px;background-color: #1b1c1e;color: #fff;padding: 20px;">
                                 <tr>
-                                    <td>
-                                        <ul class="social-icons">
-                                            <li>
+                                    <td style="padding-bottom: 10px;">
+                                        <ul class="social-icons" style="padding: 0;">
+                                            <li style="padding: 20px;list-style-type: none;display: inline-block;">
                                                 <a href="https://www.facebook.com/HaynesFord/"><img src="https://i.imgur.com/qCnQooX.png"></a>
                                             </li>
-                                            <li>
+                                            <li style="padding: 20px;list-style-type: none;display: inline-block;">
                                                 <a href="https://www.instagram.com/haynesford/"><img src="https://i.imgur.com/SHz9Npw.png"></a>
                                             </li>
-                                            <li>
+                                            <li style="padding: 20px;list-style-type: none;display: inline-block;">
                                                 <a href="https://twitter.com/HaynesFord"><img src="https://i.imgur.com/M7OQOoW.png"></a>
                                             </li>
                                         </ul>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        <p>Calls may be recorded for training and quality purposes. You are receiving this email because you opted in to receive information from Haynes Ford either via the website, in a showroom or when you purchased your vehicle. If you no longer wish to receive email communications from us please click the link at the top of the email to unsubscribe instantly. Privacy policy. Our postal address and registered office is Haynes House 23 Ashford Road, Maidstone, Kent, ME145DQ. Registered in England. Our company resgistration number is: 00048511. 25089.</p>
+                                    <td style="padding-bottom: 10px;">
+                                        <p style="padding: 10px 30px 0px 30px;">Calls may be recorded for training and quality purposes. You are receiving this email because you opted in to receive information from Haynes Ford either via the website, in a showroom or when you purchased your vehicle. If you no longer wish to receive email communications from us please click the link at the top of the email to unsubscribe instantly. Privacy policy. Our postal address and registered office is Haynes House 23 Ashford Road, Maidstone, Kent, ME145DQ. Registered in England. Our company resgistration number is: 00048511. 25089.</p>
                                     </td>
                                 </tr>
                             </table>
@@ -339,6 +417,6 @@
                 </tr>
             </table>
         </div>
-        <!--email-background end-->
+        <!--EMAIL BACKGROUND END-->
     </body>
 </html>
